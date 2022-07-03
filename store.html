@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <title>Store-Cleverfood</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <!--Header section-->
+            <div class="grid">
+                <nav class="navbar">
+                    <label for="hamburger__mobile-input" class="hamburger-btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                    </label>
+                    <div class="navbar__brand">
+                       <a href="index.html">Cleverfood</a> 
+                    </div>
+                    <div class="hamburger__pc">
+                        <ul class="navbar__list">
+                            <li class="navbar__list navbar__list__item"><a href="index.html">Trang chủ</a></li>
+                            <li class="navbar__list navbar__list__item"><a href="intro.html">Giới thiệu</a></li>
+                            <li class="navbar__list navbar__list__item--active">
+                                <div class="dropdown">
+                                    <div class="dropbtn"><a href="store.html">
+                                        Cửa hàng
+                                        <i class="navbar-arrow-down ti-angle-down"></i>
+                                    </a></div>
+                                    <div class="dropdown__content">
+                                        <a href="#">Rau củ</a>
+                                        <a href="#">Trái cây</a>
+                                        <a href="#">Đồ uống</a>
+                                        <a href="#">Đồ khô</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar__list navbar__list__item"><a href="blog.html">Kiến thức</a></li>
+                            <li class="navbar__list navbar__list__item"><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" hidden name="" class="hamburger__input" id="hamburger__mobile-input">
+                    <label for="hamburger__mobile-input" class="hamburger__overlay"> 
+                        <label for="hamburger__mobile-input" class="hamburger__mobile-close">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                        </label>
+                    </label>
+                    <div class="hamburger__mobile">
+                        <ul class="navbar__mobile__list">
+                            <li class="navbar__mobile__list__item"><a href="index.html">Trang chủ</a></li>
+                            <li class="navbar__mobile__list__item"><a href="intro.html">Giới thiệu</a></li>
+                            <li class="navbar__mobile__list__item">
+                                <div class="dropdown__mobile">
+                                    <div class="dropbtn__mobile"><a href="store.html">
+                                        Cửa hàng
+                                        <i class="navbar__mobile-arrow-down ti-angle-down"></i>
+                                    </a></div>
+                                    <div class="dropdown__mobile__content">
+                                        <a href="#">Rau củ</a>
+                                        <a href="#">Trái cây</a>
+                                        <a href="#">Đồ uống</a>
+                                        <a href="#">Đồ khô</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar__mobile__list__item"><a href="blog.html">Kiến thức</a></li>
+                            <li class="navbar__mobile__list__item"><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <label for="nav__search-input" class="nav__search-btn">
+                        <i class="nav__search-icon ti-search"></i>
+                    </label>
+                    <input type="checkbox" hidden name="" class="search-input" id="nav__search-input">
+                    <label for="nav__search-input" class="search__overlay">
+                        <label for="nav__search-input" class="search__close">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                        </label>
+                        <div class="nav__search__form">
+                            <div class="nav__search__form-title">
+                                <input type="text" placeholder="Tìm kiếm...">
+                            </div>
+                            <div class="nav__search__form-sub">
+                                <button type="submit" id="btnSubmit">
+                                    <i class="nav__search-icon ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </label>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Store Section -->
+         <div class="store" style="margin-top: 130px;">
+            <div class="store__nav">
+                <div class="store__nav__left">
+                    <a href="index.html">Trang chủ</a>
+                    <span>/</span>
+                    <p>Cửa hàng</p>
+                </div>
+                <div class="store__nav__right">
+                    <p>Hiển thị 1-12 trong 16 kết quả</p>
+                    <select class="form-select form-select-text" aria-label="Default select example">
+                        <option selected>Thứ tự mặc định</option>
+                        <option value="1">Thứ tự theo mức độ phổ biến</option>
+                        <option value="2">Thứ tự theo điểm đánh giá</option>
+                        <option value="3">Mới nhất</option>
+                        <option value="3">Thứ tự theo giá: thấp đến cao</option>
+                        <option value="3">Thứ tự theo giá: cao xuống thấp</option>
+                    </select>
+                </div>
+            </div>
+            <div class="store__content container">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="store__pc">
+                            <div class="store__content__bar">
+                                <div class="store__content__bar-top">
+                                    <span>Danh mục sản phẩm</span>
+                                    <ul>
+                                        <li>Rau củ</li>
+                                        <li>Trái cây</li>
+                                        <li>Đồ uống</li>
+                                        <li>Đồ khô</li>
+                                    </ul>
+                                </div>
+                                <div class="store__content__bar-middle">
+                                    <span>Lọc theo giá</span>
+                                    <div class="content__content__bar-middle-range">
+                                        <input style="margin-top: 30px;" type="range" class="form-range"  id="customRange1">
+                                        <button>
+                                            <label for="customRange1" class="form-label">LỌC</label>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="store__content__bar-bottom">
+                                    <span class="store__content__bar-title">Sản phẩm</span>
+                                    <ul>
+                                        <li class="store__product">
+                                            <img style="width: 20%" src="./assets/css/img/f5.jpg" alt="img">
+                                            <div class="store__product-title">
+                                                <span class="store__product-name">Nho xanh</span>
+                                                <span class="store__product-price">320,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__product">
+                                            <img style="width: 20%" src="./assets/css/img/dao.jpg" alt="img">
+                                            <div class="store__product-title">
+                                                <span class="store__product-name">Đào</span>
+                                                <span class="store__product-price">330,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__product">
+                                            <img style="width: 20%" src="./assets/css/img/sale pd4.jpg" alt="img">
+                                            <div class="store__product-title">
+                                                <span class="store__product-name">Chanh dây</span>
+                                                <span class="store__product-price">190,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__product">
+                                            <img style="width: 20%" src="./assets/css/img/f3.jpg" alt="img">
+                                            <div class="store__product-title">
+                                                <span class="store__product-name">Chuối</span>
+                                                <span class="store__product-price">150,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__product">
+                                            <img style="width: 20%" src="./assets/css/img/f4.jpg" alt="img">
+                                            <div class="store__product-title">
+                                                <span class="store__product-name">Dưa leo</span>
+                                                <span class="store__product-price">50,000 đ</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="store-mobile-input" class="store__bars-btn">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                        </label>
+                        <input type="checkbox" hidden name="" class="store__input" id="store-mobile-input">
+                        <label for="store-mobile-input" class="store__overlay">
+                            <label for="store-mobile-input" class="store__mobile-close">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                            </label>
+                        </label>
+                        <div class="store__mobile">
+                            <div class="store__mobile__content__bar">
+                                <div class="store__mobile__content__bar-top">
+                                    <span>Danh mục sản phẩm</span>
+                                    <ul>
+                                        <li>Rau củ</li>
+                                        <li>Trái cây</li>
+                                        <li>Đồ uống</li>
+                                        <li>Đồ khô</li>
+                                    </ul>
+                                </div>
+                                <div class="store__mobile__content__bar-middle">
+                                    <span>Lọc theo giá</span>
+                                    <div class="store__mobile__content__bar-middle-range">
+                                        <input style="margin-top: 30px;" type="range" class="form-range"  id="customRange1">
+                                        <button>
+                                            <label for="customRange1" class="form-label">LỌC</label>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="store__mobile__content__bar-bottom">
+                                    <span class="store__mobile__content__bar-title">Sản phẩm</span>
+                                    <ul>
+                                        <li class="store__mobile__product">
+                                            <img style="width: 20%" src="./assets/css/img/f5.jpg" alt="img">
+                                            <div class="store__mobile__product-title">
+                                                <span class="store__mobile__product-name">Nho xanh</span>
+                                                <span class="store__mobile__product-price">320,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__mobile__product">
+                                            <img style="width: 20%" src="./assets/css/img/dao.jpg" alt="img">
+                                            <div class="store__mobile__product-title">
+                                                <span class="store__mobile__product-name">Đào</span>
+                                                <span class="store__mobile__product-price">330,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__mobile__product">
+                                            <img style="width: 20%" src="./assets/css/img/sale pd4.jpg" alt="img">
+                                            <div class="store__mobile__product-title">
+                                                <span class="store__mobile__product-name">Chanh dây</span>
+                                                <span class="store__mobile__product-price">190,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__mobile__product">
+                                            <img style="width: 20%" src="./assets/css/img/f3.jpg" alt="img">
+                                            <div class="store__mobile__product-title">
+                                                <span class="store__mobile__product-name">Chuối</span>
+                                                <span class="store__mobile__product-price">150,000 đ</span>
+                                            </div>
+                                        </li>
+                                        <li class="store__mobile__product">
+                                            <img style="width: 20%" src="./assets/css/img/f4.jpg" alt="img">
+                                            <div class="store__mobile__product-title">
+                                                <span class="store__mobile__product-name">Dưa leo</span>
+                                                <span class="store__mobile__product-price">50,000 đ</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+                        <div class="store__mobile__content__list">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img  src="./assets/css/img/f1.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f2.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f3.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f4.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f5.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f6.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f7.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f8.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f1.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f2.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f3.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="feature__content">
+                                            <div class="feature__img">
+                                                <img src="./assets/css/img/f4.jpg" alt="img">
+                                            </div>
+                                            <div class="feature__title">
+                                                <div class="feature__name">
+                                                    <a href="#">Dưa leo</a>
+                                                </div>
+                                                <div class="feature__price">
+                                                    <span>220 000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul style="margin-top: 30px" class="pagination justify-content-center">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+         </div>
+    <!-- End Store Section -->
+
+    <!-- Email Section -->
+        <div class="email" style="margin-top: 80px;">
+            <h1>Đăng ký để nhận cập nhật</h1>
+            <span>Để lại email để không bỏ lỡ bất kỳ email nào</span>
+            <div class="email__form">
+                <input type="text" placeholder="Email..." />
+                <input type="submit" id="btnSubmit" value="Đăng ký" />
+            </div>
+        </div>
+    <!-- End Email Section -->
+
+    <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer__layout"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="footer__info">
+                            <img src="./assets/css/img/logo-new.png" alt="img">
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                            <a href="#">0769220126</a>
+                            <a href="#">demohunterg@gmail.com</a>
+                            <a href="#">mon@mona.media</a>
+                            <a href="#">demohunterp</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer__menu">
+                            <div class="footer__layouts"></div>
+                            <h3>Menu</h3>
+                            <a class="footer__menu-active" href="#">Trang chủ</a>
+                            <a href="#">Giới thiệu</a>
+                            <a href="#">Cửa hàng</a>
+                            <a href="#">Kiến thức</a>
+                            <a href="#">Liên hệ</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer__menu">
+                            <div class="footer__layouts"></div>
+                            <h3>Sản phẩm</h3>
+                            <a href="#">Rau củ</a>
+                            <a href="#">Trái cây</a>
+                            <a href="#">Đồ uống</a>
+                            <a href="#">Đồ khô</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer__layouts"></div>
+                        <div class="footer__menu">
+                            <div class="footer__instagram">
+                                <h3>Instagram</h3>
+                                <p>Instagram has returned invalid data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- End Footer Section -->
+
+    <!-- Copyright -->
+        <div class="copyright">
+            <p>© Bản quyền thuộc về. Thiết kế website <strong><a href ="#">Yuri</a></strong></a></p>
+        </div>
+    <!-- End Copyright-->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LR4q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            })
+        })
+    </script>
+</body>
+</html>
